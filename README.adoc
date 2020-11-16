@@ -1,2 +1,21 @@
-# bb-scripts
-Contains the utility scripts developed in Clojure on top of babashka
+## bb-scripts
+
+This project is meant to contain the utility scripts written in Clojure, meant to run on https://github.com/borkdude/babashka[babashka], a GraalVM utility to run Clojure.
+Since babashka is available for Mac, Windows and Unix environment, this scripts can be used in all of those environments.
+
+## Pre-requisite:
+
+You'll be required to have babashka(bb) installed in your system to make use of the scripts in this.
+
+## Purpose:
+
+A couple of reasons,
+
+- Based on the different project requirements, I'm required to work across different OS, I miss certain commands, especially, when I have to work on Windows.
+- At times I need certain utilities which are not commonly avaialble, so thought of building it on my own.
+
+## Setup:
+
+Once you have `bb` setup, configure your `source-bb-utils-<os>.sh` so that it can be loaded automatically (from `bashrc`, `zshrc`, etc.).
+
+For example, you might required to add `source source-bb-utils-<os>.sh` in your `*rc` or `*profile` files.

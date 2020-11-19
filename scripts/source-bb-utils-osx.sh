@@ -1,4 +1,5 @@
+# Wrapper for frequency
 function frequency() 
 {
- bb -i -f $(dirname "$0")/src/frequencies.clj -- $@
+ bb -i -f $BB_SCRIPTS/src/frequency.clj -- $@
 }

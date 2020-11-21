@@ -16,6 +16,24 @@ A couple of reasons,
 
 ## Setup:
 
-Once you have `bb` setup, configure your `source-bb-utils-<os>.sh` so that it can be loaded automatically (from `bashrc`, `zshrc`, etc.).
+(Currently available only for mac)
 
-For example, you might required to add `source source-bb-utils-<os>.sh` in your `*rc` or `*profile` files.
+Once you have `bb` setup abd having `bb-scripts` checkedout, add the below line to your initializing script (`bashrc`, `zshrc`, or similar files)
+
+```
+BB_SCRIPTS='Fully qualified path of where you checked out the script'
+source $BB_SCRIPTS/scripts/source-bb-utils-<your-os>.sh
+```
+## Utils available:
+
+### `frequency`:
+Gets the frequency of the lines available in a given text file.
+Ex,
+```
+cat <file_to_get_frequency>|frequency
+```
+Or,
+
+```
+frequenct -f <file_to_get_frequency>
+```

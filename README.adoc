@@ -35,5 +35,5 @@ cat <file_to_get_frequency>|frequency
 Or,
 
 ```
-frequenct -f <file_to_get_frequency>
+frequency -f <file_to_get_frequency>
 ```

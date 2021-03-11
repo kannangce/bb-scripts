@@ -16,3 +16,9 @@ alias jlint='pbpaste|jq . |pbcopy'
 
 # deduplicate
 alias dedup='pbpaste| sort -u|pbcopy'
+
+# Cleanup all the branches except master
+alias cleanup_branches='git branch|grep -v master|xargs git branch -d'
+
+# Shorthand for gradle with enhanced heap and parallel option
+function g() { ./gradlew -Dorg.gradle.jvmargs=-Xmx10g --parallel $@; }

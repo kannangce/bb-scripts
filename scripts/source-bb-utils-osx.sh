@@ -1,7 +1,7 @@
 # Wrapper for frequency
-function frequency() 
+function frequency()
 {
- bb -i -f $BB_SCRIPTS/src/frequency.clj -- $@
+ bb -f $BB_SCRIPTS/src/frequency.clj $@
 }
 
 # mkdir and cd
